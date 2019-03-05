@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Anton-Regular;
+    src: url(assets/Anton-Regular.ttf);
+}
+
+h1 {
+    color: blue;
+    font-family: Anton-Regular;
+}
