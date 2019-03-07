@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="table-of-contents">
+        <h1>Table of contents</h1>
+        <ul>
+            <li>Overview</li>
+            <li>Element Selectors</li>
+            <li>Class Selectors</li>
+            <li>Id Selectors</li>
+            <li>Universal Selector</li>
+            <li>Attribute Selector</li>
+            <li>Pseudo Selectors</li>
+            <li>Pseudo Element Selectors</li>
+            <li>Combinators</li>
+            <li>Links and Resources</li>
+        </ul>
+    </section>
+
+
+    <main>
+        <section id="overview">
+            <h1>Welcome to CSS</h1>
+            <p>Here we will discuss the various types of selectors in CSS</p>
+        </section>
+        <section id="element-selectors">
+            <h1>Element Selectors</h1>
+            <p>Selects elements by their name</p>
+            <h2>In the HTML</h2>
+            <code>
+                <span class="tag focus">&lt;section&gt;</span> 
+                bla bla bla
+                <span class="tag">&lt;/section&gt;</span> 
+            </code>
+            <h2>In the CSS</h2>
+            <code>
+                <span class="selector">section</span>
+                <span class="css-values">
+                {
+                    color: blue;
+                }
+                </span>
+            </code>
+        </section>
+        <section id="class-selectors">
+            <h1>Class Selector</h1>
+            <p>Selects elements by their class</p>
+            <h2>In the HTML</h2>
+            <code>
+                <span class="tag">&lt;section class="mark-me"&gt;</span>
+                bla bla bla
+                <span class="tag">&lt;/section&gt;</span>
+            </code>
+            <h2>In the CSS</h2>
+            <code>
+                <span class="selector">.mark-me</span> 
+                <span class="css-values">
+                        {
+                    color: red;
+                }
+                </span>
+            </code>
+        </section>
+        <section id="id-selectors">
+            <h1>Id Selector</h1>
+            <p>Selects elements by their Id</p>
+            <h2>In the HTML</h2>
+            <code>
+                <span class="tag">&lt;section id="some-name"&gt;</span>
+                bla bla bla
+                <span class="tag">&lt;/section&gt;</span>
+            </code>
+            <h2>In the CSS</h2>
+            <code>
+                <span class="selector">#some-name</span> 
+                <span class="css-values">
+                {
+                    color: red;
+                }
+                </span>
+            </code>
+        </section>
+        <section id="universal-selector">
+            <h1>Universal Selector</h1>
+            <p>Selects all elements</p>
+            <h2>In the HTML</h2>
+            <code>
+                <span class="tag">&lt;main&gt;</span>
+                <span class="tag">&lt;section&gt;</span>
+                bla bla bla
+                <span class="tag">&lt;/section&gt;</span>
+                <span class="tag">&lt;/main&gt;</span>
+            </code>
+            <h2>In the CSS</h2>
+            <code>
+                <span class="selector">*</span> 
+                <span class="css-values">
+                {
+                    color: red;
+                }
+                </span>
+            </code>
+        </section>
+        <section id="attribute-selector">
+            <h1>Attribute Selector</h1>
+            <p>Selects all elements with a specific attribute</p>
+            <h2>In the HTML</h2>
+            <code>
+                <span class="tag">&lt;img src="image.png"&gt;</span>
+            </code>
+            <h2>In the CSS</h2>
+            <code>
+                <span class="selector">[src]</span> 
+                <span class="css-values">
+                {
+                    color: red;
+                }
+                </span>
+            </code>
+            <h2>In the CSS - with specific attribute value</h2>
+            <code>
+                <span class="selector">[src="image.png"]</span> 
+                <span class="css-values">
+                {
+                    color: red;
+                }
+                </span>
+            </code>
+        </section>
+        <section id="pseudo-selector">
+            <h1>Pseudo Selector</h1>
+            <p>Selects all elements according to condition</p>
+            <h2>In the HTML</h2>
+            <code>
+                    <span class="tag">&lt;section&gt;</span>
+                    bla bla bla
+                    <span class="tag">&lt;/section&gt;</span>
+                </code>
+            <h2>In the CSS</h2>
+            <code>
+                    <span class="selector">section:hover</span> 
+                    <span class="css-values">
+                    {
+                        color: red;
+                    }
+                    </span>
+                </code>
+        </section>
+        <section id="pseudo-element-selector">
+            <h1>Pseudo Element Selector</h1>
+            <p>Selects Elements that are created dynamially by the selector</p>
+            <h2>In the HTML</h2>
+            <code>
+                        <span class="tag">&lt;section&gt;</span>
+                        bla bla bla
+                        <span class="tag">&lt;/section&gt;</span>
+                    </code>
+            <h2>In the CSS</h2>
+            <code>
+                        <span class="selector">section::first-letter</span> 
+                        <span class="css-values">
+                        {
+                            color: red;
+                        }
+                        </span>
+                    </code>
+        </section>
+        <section id="combinators">
+                <h1>Combinators</h1>
+                <p>Combine selectors to create new more specific selectors</p>
+                <h2>In the HTML</h2>
+                <code>
+                            <span class="tag">&lt;ul&gt;</span>
+                            <span class="tag">&lt;li&gt;</span>
+                            Item
+                            <span class="tag">&lt;/li&gt;</span>
+                            <span class="tag">&lt;li&gt;</span>
+                            Item
+                            <span class="tag">&lt;/li&gt;</span>
+                            <span class="tag">&lt;li&gt;</span>
+                            Item
+                            <span class="tag">&lt;/li&gt;</span>
+                            <span class="tag">&lt;/ul&gt;</span>
+                        </code>
+                <h2>In the CSS</h2>
+                <code>
+                            <span class="selector">ul > li</span> 
+                            <span class="css-values">
+                            {
+                                color: red;
+                            }
+                            </span>
+
+                            <span class="selector">ul li</span> 
+                            <span class="css-values">
+                            {
+                                color: red;
+                            }
+                            </span>
+                        </code>
+            </section>
+            <section id="Resources">
+                    <h1>Resources and links</h1>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/cssref/css_selectors.asp">CSS Selectors Reference</a></li>
+                        <li><a href="https://guide.freecodecamp.org/css/tutorials/css-selectors-cheat-sheet/">CSS Selectors Cheat Sheet</a></li>
+                        <li><a href="http://flukeout.github.io/">CSS Selectors Learning Game</a></li>
+                    </ul>
+                </section>
+                </main>
+</body>
+
+</html>
