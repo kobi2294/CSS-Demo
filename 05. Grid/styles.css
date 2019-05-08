@@ -19,3 +19,11 @@ body {
     width: 100%;
     background: rgb(194, 211, 218);
 }
+
+.item {
+    border: 1px solid black;
+    margin: 4px;
+    background: rgb(140, 168, 180);   
+    padding: 4px;
+    font-size: 24px; 
+}
